@@ -18,9 +18,9 @@ const About = () => {
                         <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden relative group">
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800"
+                                src="/ahmad-portrait.webp"
                                 alt="Ahmad Ansari"
-                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                             />
 
                             {/* Floating Badge */}

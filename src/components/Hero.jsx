@@ -51,11 +51,12 @@ const Hero = () => {
                     className="relative hidden md:block"
                 >
                     <div className="absolute inset-0 bg-primary-500/20 blur-[120px] rounded-full"></div>
-                    <div className="relative glass rounded-3xl p-8 border-white/20 aspect-square flex items-center justify-center overflow-hidden">
-                        {/* Placeholder for professional portrait or abstract 3D element */}
-                        <div className="w-full h-full bg-gradient-to-br from-primary-400/20 to-purple-500/20 flex items-center justify-center">
-                            <span className="text-8xl opacity-10 font-bold">AA</span>
-                        </div>
+                    <div className="relative glass rounded-3xl p-4 border-white/20 aspect-square flex items-center justify-center overflow-hidden">
+                        <img
+                            src="/ahmad-portrait.webp"
+                            alt="Ahmad Ansari"
+                            className="w-full h-full object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-110"
+                        />
 
                         {/* Floating elements */}
                         <motion.div
