@@ -107,8 +107,7 @@ const Translator = ({ isOpen, setIsOpen }) => {
     };
 
     return (
-        <div className="fixed bottom-40 right-8 z-[110]">
-            {/* The One True AI Assistant Button (Green) */}
+        <div className="fixed bottom-36 md:bottom-40 right-4 md:right-8 z-[110]">
             <motion.button
                 whileHover={{ scale: 1.15 }}
                 whileTap={{ scale: 0.9 }}

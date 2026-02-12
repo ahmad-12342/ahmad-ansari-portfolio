@@ -89,7 +89,7 @@ const Chatbot = ({ isOpen, setIsOpen }) => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-tr from-primary-600 to-primary-400 text-white rounded-full flex items-center justify-center shadow-2xl z-[1000] cursor-pointer"
+                className="fixed bottom-4 md:bottom-8 right-4 md:right-8 w-14 h-14 bg-gradient-to-tr from-primary-600 to-primary-400 text-white rounded-full flex items-center justify-center shadow-2xl z-[1000] cursor-pointer"
             >
                 {isOpen ? <X size={24} /> : <MessageSquare size={24} />}
                 {!isOpen && (
@@ -104,7 +104,7 @@ const Chatbot = ({ isOpen, setIsOpen }) => {
                         initial={{ opacity: 0, y: 50, scale: 0.9 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.9 }}
-                        className="fixed bottom-28 right-8 w-[320px] h-[400px] glass border border-white/10 rounded-[2rem] shadow-2xl flex flex-col z-[1000] overflow-hidden"
+                        className="fixed bottom-20 md:bottom-28 right-4 md:right-8 w-[calc(100vw-2rem)] md:w-[320px] h-[450px] md:h-[400px] glass border border-white/10 rounded-[2rem] shadow-2xl flex flex-col z-[1000] overflow-hidden"
                     >
                         {/* Compact Header */}
                         <div className="p-4 bg-white/5 border-b border-white/10 flex items-center justify-between">

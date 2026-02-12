@@ -70,14 +70,14 @@ const LanguageSwitcher = ({ isOpen, setIsOpen }) => {
     }, [isOpen]);
 
     return (
-        <div className="fixed bottom-24 right-8 z-[110]">
+        <div className="fixed bottom-20 md:bottom-24 right-4 md:right-8 z-[110]">
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                        className="absolute bottom-20 right-0 w-[320px] glass border border-inherit/10 rounded-[2rem] shadow-2xl flex flex-col h-[450px] overflow-hidden z-[110]"
+                        className="absolute bottom-20 right-0 w-[calc(100vw-2rem)] md:w-[320px] glass border border-inherit/10 rounded-[2rem] shadow-2xl flex flex-col h-[450px] overflow-hidden z-[110]"
                     >
                         {/* Compact Header */}
                         <div className="p-4 bg-inherit/5 border-b border-inherit/10 backdrop-blur-md relative z-20">
