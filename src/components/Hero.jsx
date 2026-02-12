@@ -55,7 +55,7 @@ const Hero = () => {
                         <img
                             src="/ahmad-portrait.webp"
                             alt="Ahmad Ansari"
-                            className="w-full h-full object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-110"
+                            className="w-full h-full object-cover object-top rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-110"
                         />
 
                         {/* Floating elements */}

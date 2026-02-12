@@ -20,7 +20,7 @@ const About = () => {
                             <img
                                 src="/ahmad-portrait.webp"
                                 alt="Ahmad Ansari"
-                                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                                className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700"
                             />
 
                             {/* Floating Badge */}
