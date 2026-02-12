@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Ahmad Ansari - Frontend Developer | React & Web Development Portfolio</title>
+  <meta name="title" content="Ahmad Ansari - Frontend Developer | React & Web Development Portfolio" />
+  <meta name="description"
+    content="Professional Frontend Developer specializing in React, Firebase, and modern web technologies. Building premium, high-performance web applications with exceptional UI/UX design." />
+  <meta name="keywords"
+    content="Ahmad Ansari, Frontend Developer, React Developer, Web Developer, JavaScript, Firebase, Portfolio, Karachi Pakistan, Web Design, UI/UX" />
+  <meta name="author" content="Ahmad Ansari" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ahmadansari.dev/" />
+  <meta property="og:title" content="Ahmad Ansari - Frontend Developer | React & Web Development Portfolio" />
+  <meta property="og:description"
+    content="Professional Frontend Developer specializing in React, Firebase, and modern web technologies. Building premium, high-performance web applications." />
+  <meta property="og:image" content="https://ahmadansari.dev/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://ahmadansari.dev/" />
+  <meta property="twitter:title" content="Ahmad Ansari - Frontend Developer | React & Web Development Portfolio" />
+  <meta property="twitter:description"
+    content="Professional Frontend Developer specializing in React, Firebase, and modern web technologies." />
+  <meta property="twitter:image" content="https://ahmadansari.dev/og-image.jpg" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="msapplication-TileColor" content="#0ea5e9" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f172a;
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0f172a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.8s ease-in-out, visibility 0.8s;
+    }
+
+    .loader-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-container {
+      width: 80px;
+      height: 80px;
+      animation: pulse-glow 2s infinite ease-in-out;
+    }
+
+    .loading-bar-container {
+      width: 150px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .loading-bar {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #0ea5e9, #a855f7);
+      transform: translateX(-100%);
+      animation: loading 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.3));
+      }
+
+      50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.5));
+      }
+    }
+
+    @keyframes loading {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      50% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .loaded #preloader {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="logo-container">
+        <!-- Inline SVG Logo for Preloader -->
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="preloadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0ea5e9" />
+              <stop offset="100%" stopColor="#a855f7" />
+            </linearGradient>
+          </defs>
+          <path d="M50 5 L93.3 30 V80 L50 105 L6.7 80 V30 Z" stroke="url(#preloadGradient)" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M50 25 L25 80 M50 25 L75 80 M35 60 H65" stroke="white" stroke-width="6" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+
+  <script type="module" src="./src/main.jsx"></script>
+
+  <!-- Google Translate AI Integration -->
+  <div id="google_translate_element" style="display:none"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <style>
+    /* Premium styling for Google Translate widget */
+    .goog-te-gadget-simple {
+      background: rgba(255, 255, 255, 0.05) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      padding: 10px 15px !important;
+      border-radius: 12px !important;
+      color: white !important;
+      cursor: pointer !important;
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    .goog-te-gadget-simple span {
+      color: white !important;
+      font-size: 11px !important;
+      font-weight: bold !important;
+    }
+
+    .goog-te-gadget-simple img {
+      display: none !important;
+    }
+
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+    }
+
+    #goog-gt-tt {
+      display: none !important;
+    }
+
+    .goog-tooltip {
+      display: none !important;
+    }
+
+    .goog-tooltip:hover {
+      display: none !important;
+    }
+
+    .goog-text-highlight {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+
+    body {
+      top: 0px !important;
+    }
+  </style>
+
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+      }, 500);
+    });
+    // Emergency hide faster
+    setTimeout(() => {
+      document.body.classList.add('loaded');
+    }, 1500);
+  </script>
+</body>
+
+</html>

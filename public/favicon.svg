@@ -1,0 +1,23 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <!-- Hexagon Background -->
+  <path d="M50 5 L93.3 30 V80 L50 105 L6.7 80 V30 Z" 
+        fill="url(#logoGradient)" 
+        opacity="0.1" />
+  <path d="M50 5 L93.3 30 V80 L50 105 L6.7 80 V30 Z" 
+        stroke="url(#logoGradient)" 
+        stroke-width="4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  <!-- Letter A -->
+  <path d="M50 25 L25 80 M50 25 L75 80 M35 60 H65" 
+        stroke="white" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>
